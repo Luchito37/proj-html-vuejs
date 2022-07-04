@@ -11,7 +11,7 @@
             </div>
             <div class="row">
                 <div class="col d-flex justify-content-center mx-3">
-                    <div class="card mx-3 " v-for="element in caratteristicheCard" :key="element.img" style="width: 18rem;">
+                    <div class="card mx-3 shadow-lg" v-for="element in caratteristicheCard" :key="element.img" style="width: 18rem;">
                         <img :src="require('../assets/img/home-business-service-slide-'+ element.img +'-480x298.jpg')" class="card-img-top" alt="...">
                         <div class="card-body">
                             <div><h3>{{element.title}}</h3></div>

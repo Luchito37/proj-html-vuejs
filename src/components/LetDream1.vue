@@ -11,9 +11,9 @@
                 </div>
             </div>
             <div class="row row-cols-3 px-5">
-                <div class="col d-flex mb-5 px-5" v-for="element in listaPeculiarita" :key="element.title">
+                <div class="col d-flex mb-5 px-5" v-for="element in listaPeculiarita" :key="element.img">
                     <div>
-                        <img src="../assets/img/self-development.png" width="40" alt="">
+                        <img :src="require('../assets/img/icon-'+ element.img +'.png')" width="40" alt="">
                     </div>
                     <div class="text-start px-4">
                         <div>
@@ -49,26 +49,32 @@ export default {
                 {
                     title: "One to One",
                     paragraph: "Get the necessary clarity about the current state to help you improve your game.",
+                    img: "people"
                 },
                 {
                     title: "Anywhere",
                     paragraph: "Access to valuable and portable program which allow you to setup and live anywhere you want.",
+                    img: "anywhere"
                 },
                 {
                     title: "On Time",
                     paragraph: "Punctuality is yor top priority beacause it's an essential criteria to assess a program quality.",
+                    img: "time"
                 },
                 {
                     title: "Online Courses",
                     paragraph: "Online business coaching now offers you a very powerfull way to empower your business into success.",
+                    img: "online"
                 },
                 {
                     title: "Consulting",
                     paragraph: "You will get a clear sense of direction for your business, throught assessment and faster results.",
+                    img: "consulting"
                 },
                 {
                     title: "Self Develoapment",
                     paragraph: "Business coaching often keep your focus and develop you both in a professional and personal way.",
+                    img: "development"
                 },
 
             ]

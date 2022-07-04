@@ -24,47 +24,62 @@
                         </div>
                     </div>
                 </div>
-                <div class="col text-white d-flex pe-5 text-start">
+                <div class="col text-secondary d-flex pe-5 text-start">
                     <div class="pe-5">
-                        <h3>Explore</h3>
-                        <ul class="list-unstyled">
-                            <li>start</li>
-                            <li>blog</li>
-                            <li>start</li>
-                            <li>blog</li>
-                            <li>start</li>
-                            <li>blog</li>
+                        <h3 class="text-white">Explosure</h3>
+                        <ul class="list-unstyled" v-for="element in listaExplosure" :key="element.date">
+                            <li>{{element}}</li>
                         </ul>
                     </div>
-                    <div>
-                        <h3>Information</h3>
-                        <ul class="list-unstyled">
-                            <li>start</li>
-                            <li>blog</li>
-                            <li>start</li>
-                            <li>blog</li>
-                            <li>start</li>
-                            <li>blog</li>
+                    <div class="pe-5">
+                        <h3 class="text-white">Explosure</h3>
+                        <ul class="list-unstyled" v-for="element in listaInformation" :key="element.date">
+                            <li>{{element}}</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col"></div>
                 <div class="col text-white px-5  spacing">
                     <div class="px-5"><h6 class="text-secondary">© 2020 Maxcoach. All Right Reserved</h6></div>
                 </div>
-                <div class="col">
+                
                     <div class=" rounded-circle bg-arrow d-flex align-items-center justify-content-center">
                         <div>
                             <i class="fa-solid fa-arrow-up-long"></i>
                         </div>
                     </div>
-                </div>
+
             </div>
         </div>
     </div>
 </template>
+
+
+<script>
+
+export default {
+    data(){
+        return {
+            listaExplosure: [
+                "Start Here",
+                        "Blog",
+                        "About us",
+                        "Succes story",
+                        "Courses",
+                        "Contact us"
+            ],
+            listaInformation:[
+                "Membership",
+                "Purchase guide",
+                "Privacy policy",
+                "Terms of service"
+            ]
+        }
+    }
+}
+
+</script>
 
 
 
@@ -76,7 +91,7 @@
     .bg-arrow{
         background-color: #61e6d2;
         width: 50px;
-        height: 50px
+        height: 50px;
     }
     
 </style>
