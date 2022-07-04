@@ -1,5 +1,5 @@
 <template>
-    <div class="section">
+    <div class="section position-relative">
         <div class="container">
             <div class="row row-cols-2">
                 <div class="col text-start text-secondary">
@@ -44,7 +44,7 @@
                     <div class="px-5"><h6 class="text-secondary">© 2020 Maxcoach. All Right Reserved</h6></div>
                 </div>
                 
-                    <div class=" rounded-circle bg-arrow d-flex align-items-center justify-content-center">
+                    <div class=" rounded-circle bg-arrow d-flex align-items-center justify-content-center fixed-bottom">
                         <div>
                             <i class="fa-solid fa-arrow-up-long"></i>
                         </div>
@@ -93,5 +93,10 @@ export default {
         width: 50px;
         height: 50px;
     }
+    .fixed-bottom {
+    position: fixed;
+    left: 90vw;
+    z-index: 1030;
+}
     
 </style>

@@ -12,10 +12,13 @@
                     </div>
                     <div>
                         <nav class="d-inline-block">
-                            <form class="d-flex" role="search">
+                            <div class="d-flex" :class="questionCliccata === true ? 'd-none' : 'd-inline-block'">
                                 <input class="bgInput border border-0 rounded-start py-2 px-1" type="search" placeholder="Enter your email" aria-label="Search">
-                                <button class="border border-0 bgbuttom rounded-end text-white px-3" type="submit">Subscribe</button>
-                            </form>
+                                <button class="border border-0 bgbuttom rounded-end text-white px-3" @click="impostaVisibilita" type="submit">Subscribe</button>
+                            </div>
+                            <div>
+                                <h3 class="colortext" :class="questionCliccata === true ? 'd-inline-block' : 'd-none'">YOU'RE ALREADY SUB!</h3>
+                            </div>
                         </nav>
                     </div>
                 </div>
@@ -26,6 +29,24 @@
         </div>
     </div>
 </template>
+
+
+<script>
+
+export default {
+    data(){
+        return {
+            questionCliccata: false,
+        }
+    },
+    methods:{
+        impostaVisibilita(){
+            return this.questionCliccata = true;
+        },
+    },
+}
+
+</script>
 
 
 

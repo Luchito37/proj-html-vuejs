@@ -14,6 +14,8 @@
 
         <LoveSection></LoveSection>
 
+        <SezioneProva></SezioneProva>
+
         <SubNews></SubNews>
 
         <TheFooter></TheFooter>
@@ -31,6 +33,7 @@ import UpcomingEvents from './UpcomingEvents.vue';
 import LoveSection from './LoveSection.vue';
 import SubNews from './SubNews.vue';
 import TheFooter from './TheFooter.vue';
+import SezioneProva from './SezioneProva.vue';
 
 
 export default {
@@ -44,7 +47,8 @@ export default {
     UpcomingEvents,
     LoveSection,
     SubNews,
-    TheFooter
+    TheFooter,
+    SezioneProva
     
 
     }
