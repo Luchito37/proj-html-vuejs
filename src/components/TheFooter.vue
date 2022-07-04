@@ -24,7 +24,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col d-flex pe-5 text-start">
+                <div class="col text-white d-flex pe-5 text-start">
                     <div class="pe-5">
                         <h3>Explore</h3>
                         <ul class="list-unstyled">
@@ -51,7 +51,7 @@
             </div>
             <div class="row mt-5">
                 <div class="col"></div>
-                <div class="col px-5  spacing">
+                <div class="col text-white px-5  spacing">
                     <div class="px-5"><h6 class="text-secondary">© 2020 Maxcoach. All Right Reserved</h6></div>
                 </div>
                 <div class="col">
