@@ -9,8 +9,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row row-cols-4">
-                <div class="col d-flex" v-for="element in caratteristicheCard" :key="element.img">
+            <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1">
+                <div class="col mb-3" v-for="element in caratteristicheCard" :key="element.img">
                     <div class="card text-white">
                         <img :src="require('../assets/img/stock-full-hd-'+ element.img +'-443x600.jpg')" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex justify-content-end flex-column align-items-start text-start ombre">

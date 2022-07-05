@@ -1,8 +1,8 @@
 <template>
     <div class="bgSection">
-        <div class="container px-5">
-            <div class="row align-items-center px-5">
-                <div class="col-4 d-flex flex-column text-start px-3">
+        <div class="container">
+            <div class="row row-cols-lg-2 row-cols-sm-1 align-items-center  justify-content-sm-center">
+                <div class="col-lg-4  col-sm-6 d-flex flex-column text-lg-start text-md-center px-3">
                     <div class="colortext">
                         <h5>New Challenges, New Skills</h5>
                     </div>

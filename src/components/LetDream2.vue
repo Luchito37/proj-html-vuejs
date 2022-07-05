@@ -9,9 +9,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col d-flex justify-content-center mx-3">
-                    <div class="card mx-3 shadow-lg" v-for="element in caratteristicheCard" :key="element.img" style="width: 18rem;">
+            <div class="row row-cols-lg-3 row-cols-md-1">
+                <div class="col d-flex justify-content-center mb-4" v-for="element in caratteristicheCard" :key="element.img">
+                    <div class="card mx-3 shadow-lg"  style="width: 18rem;">
                         <img :src="require('../assets/img/home-business-service-slide-'+ element.img +'-480x298.jpg')" class="card-img-top" alt="...">
                         <div class="card-body">
                             <div><h3>{{element.title}}</h3></div>

@@ -10,7 +10,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row row-cols-3 px-5">
+            <div class="row row-cols-lg-3 row-cols-md-2 px-5">
                 <div class="col d-flex mb-5 px-5" v-for="element in listaPeculiarita" :key="element.img">
                     <div>
                         <img :src="require('../assets/img/icon-'+ element.img +'.png')" width="40" alt="">

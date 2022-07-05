@@ -1,7 +1,7 @@
 <template>
     <div class="section bgImgAvatar">
-        <div class="container spacing">
-            <div class="row row-cols-md-2">
+        <div class="container spacing ">
+            <div class="row row-cols-lg-2 row-cols-sm-1">
                 <div class="col d-flex position-relative">
                     <div class="position-absolute top-100 start-0 translate-middle bgImgcube"></div>
                     <div class="card text-white bgTube">

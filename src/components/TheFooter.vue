@@ -97,6 +97,11 @@ export default {
     position: fixed;
     left: 90vw;
     z-index: 1030;
-}
+    }
+
+    a {
+    color: #ffffff;
+    text-decoration: underline;
+    }
     
 </style>
