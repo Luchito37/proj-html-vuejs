@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed-top bg-white">
+  <div class="sticky-top bg-white">
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -19,12 +19,12 @@
         </ul>
         <form class="d-flex align-items-center" role="search">
           <div>
-              <img src="../assets/img/en.png" width="35" height="" alt="">
+              <img :src="require('../assets/img/'+ selectedLeng +'.png')" width="35" height="" alt="">
           </div>
-          <select class="border-0 me-2" aria-label="Default select example">
+          <select class="border-0 me-2" v-model="selectedLeng" aria-label="Default select example">
               <option selected>ENGLISH</option>
-              <option value="1">FRENCH</option>
-              <option value="2">GERMAN</option>
+              <option value="fr">FRENCH</option>
+              <option value="de">GERMAN</option>
           </select>
           <div class="px-2">
             <i class="fa-solid fa-circle-user"></i>
@@ -76,7 +76,8 @@ export default {
           dropdown1: "Bought our corses",
           dropdown2: "Explore our price",
         },
-      ]
+      ],
+      selectedLeng: "en"
     }
   },
 

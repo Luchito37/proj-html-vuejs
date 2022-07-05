@@ -1,5 +1,7 @@
 <template>
     <div>
+        <SezioneProva></SezioneProva>
+        
         <BuildBusiness></BuildBusiness>
 
         <LetDream1></LetDream1>
@@ -14,7 +16,7 @@
 
         <LoveSection></LoveSection>
 
-        <SezioneProva></SezioneProva>
+        
 
         <SubNews></SubNews>
 

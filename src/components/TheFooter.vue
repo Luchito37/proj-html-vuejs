@@ -46,7 +46,7 @@
                 
                     <div class=" rounded-circle bg-arrow d-flex align-items-center justify-content-center fixed-bottom">
                         <div>
-                            <i class="fa-solid fa-arrow-up-long"></i>
+                            <a href="#"><i class="fa-solid fa-arrow-up-long"></i></a>
                         </div>
                     </div>
 
